@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LISTS</title>
+    <link rel="stylesheet" href="dazestyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="TODO">
+        <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
+            <header>TO-DO<button id="b1" type="button">+</button></header>
+            <input type="text" id="input1" placeholder="ENTER ITEM TO ADD TO YOUR TO-DO LIST......">
+            <div>
+                <ul id="ul1"> </ul>
+            </div>
+        </div>
+        
+        <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
+            <header>IN PROGRESS<button id="b2" type="button">+</button></header>
+            <input type="text" id="input2" placeholder="ENTER ITEM TO ADD TO IN-PROGRESS LIST......">
+            <div>
+                <ul id="ul2"></ul>
+            </div>
+        </div>
+        <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
+            <header>COMPLETED<button id="b3" type="button">+</button></header>
+            <input type="text" id="input3" placeholder="ENTER ITEM TO ADD TO COMPLETED LIST......">
+            <div>
+                <ul id="ul3"></ul>
+            </div>
+        </div>
+    </div> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="todo.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

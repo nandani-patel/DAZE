@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daze</title>
+    <link rel="stylesheet" href="dazestyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+     
+    <div class="dropdown">
+          <button class="dropbtn" style="background-color: rgb(71, 62, 62); color: #faeae8;">
+            MONTHS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="nav">
+            <li onclick="index=1, navigate()" >January</li>
+            <li onclick="index=2 , navigate()">February</li>
+            <li onclick="index=3 , navigate()">March</li>
+            <li onclick="index=4 , navigate()">April</li>
+            <li onclick="index=5 , navigate()">May</li>
+            <li onclick="index=6 , navigate()">June</li>
+            <li onclick="index=7 , navigate()">July</li>
+            <li onclick="index=8 , navigate()">August</li>
+            <li onclick="index=9 , navigate()">September</li>
+            <li onclick="index=10 , navigate()">October</li>
+            <li onclick="index=11 , navigate()">November</li>
+            <li onclick="index=12 , navigate()">December</li>
+          </div>
+    </div>    
+
+
+    <div class="content">
+
+        <div class="left">
+            <div class="container"  data-aos="fade-in" style="transition: 3s;" >
+                <div id="m_name"></div>
+                <div id="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="dates" id="dates" > </div>
+            </div>
+        </div>
+      
+        <div class="right" >
+
+            <div class="d" id="d"  data-aos="flip-up" data-aos-delay="1000" data-aos-duration="1500"></div>
+            
+            <div class="rr">
+                <div class="e" id="e1" data-aos="flip-down" data-aos-delay="1000" data-aos-duration="1500"></div>
+                <div class="e" id="e2"  data-aos="flip-down" data-aos-delay="1000" data-aos-duration="1500" ></div>
+            </div> 
+    
+        </div>
+        <div class="clock" data-aos="flip-down" data-aos-delay="1000" data-aos-duration="2000">
+
+            <div class="digit tenhour">
+              <span class="base">H</span>
+              <div class="flap over front"></div>
+              <div class="flap over back"></div>
+              <div class="flap under"></div>
+            </div>
+          
+            <div class="digit hour">
+              <span class="base"></span>
+              <div class="flap over front"></div>
+              <div class="flap over back"></div>
+              <div class="flap under"></div>
+            </div>
+            
+            
+            <div class="digit tenmin">
+              <span class="base"></span>
+              <div class="flap over front"></div>
+              <div class="flap over back"></div>
+              <div class="flap under"></div>
+            </div>
+          
+            <div class="digit min">
+              <span class="base"></span>
+              <div class="flap over front"></div>
+              <div class="flap over back"></div>
+              <div class="flap under"></div>
+            </div>
+                
+            <div class="digit tensec">
+              <span class="base"></span>
+              <div class="flap over front"></div>
+              <div class="flap over back"></div>
+              <div class="flap under"></div>
+            </div> 
+          
+             <div class="digit sec">
+              <span class="base"></span>
+              <div class="flap over front"></div>
+              <div class="flap over back"></div>
+              <div class="flap under"></div>
+            </div>
+            
+          </div>
+
+    </div>
+    <script src="./main.js"> </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="flipclock.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+   
+</body>
+
+</html>

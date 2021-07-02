@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+
+    <style>
+        body {
+            background-color: black;
+            background-image: none;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@200&family=Playfair+Display&family=Staatliches&display=swap');
+    </style>
+    <link rel="stylesheet" href="dazestyle.css">
+</head>
+
+<body>
+    <h1 class="ml1" style="text-align: center;">
+        <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters">TODAY IN NEWS</span>
+            <span class="line line2"></span>
+        </span>
+    </h1>
+
+
+    <div class="ncontent" id="info"></div>
+    <script src="news.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        var textWrapper = document.querySelector('.ml1 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml1 .letter',
+                scale: [0.3, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 2000,
+                delay: (el, i) => 70 * (i + 1)
+            }).add({
+                targets: '.ml1 .line',
+                scaleX: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 2000,
+                offset: '-=875',
+                delay: (el, i, l) => 80 * (l - i)
+            }).add({
+                targets: '.ml1',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 4000
+            });
+
+    </script>
+</body>
+
+</html>
