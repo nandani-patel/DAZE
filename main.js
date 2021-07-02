@@ -4,11 +4,13 @@ const dates = document.getElementsByClassName('days');
 const temp = document.getElementById('dates');
 let index = 0;
 //console.log(index);
+var x = new Date();
+var m = x.getMonth();
 
 function main() {
   const dt = new Date();
 
-  if (index !== 0) dt.setMonth(new Date().getMonth() + index - x - 1);
+  if (index !== 0) dt.setMonth(new Date().getMonth() + index - m - 1);
   const day = dt.getDate();
   const month = dt.getMonth();
   const year = dt.getFullYear();
