@@ -1,6 +1,5 @@
  body{
     justify-content: center;
-    background-image: url(images/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -258,7 +257,7 @@ hr{
 }
 .e{
    display: inline-block;
-   width: 100%;
+   width: 80%;
    height: fit-content;
    background-color: rgb(80, 78, 78, 0.5);
    border-radius: 10px;
@@ -286,10 +285,23 @@ hr{
     font-size: 1cm;
     color: thistle;
 }
+#d1{
+  width: 40%;
+  margin-right: 40px;
+  margin-top: 40px;
+  vertical-align: top;
+}
+#d2{
+  width: 40%;
+  margin-right: 40px;
+  margin-top: 40px;
+  vertical-align: top;
+}
+
 .digit {
     position: relative;
     float: left;
-    width: 4.5vw;
+    width: 4vw;
     height: 6.5vw;
     background-color: rgb(80, 78, 78, 0.5);
     border-radius: 15px;
@@ -454,7 +466,7 @@ hr{
   .gradcard{
     margin-top: 80px;
     margin-bottom: 30px;
-    color:  rgb(100, 100, 100);
+    color:  rgb(194, 246, 255);
     vertical-align: top;
     height: 400px;
     width: 350px;
@@ -466,7 +478,7 @@ hr{
   }
   .gradcard header{
     font-size: 0.6cm;
-    color: rgb(204, 204, 204);
+    color: rgb(255, 255, 255);
   }
   .gradcard img{
     height: 200px;
@@ -493,11 +505,11 @@ hr{
   height: 350px;
   width: 550px;
   font-size: 0.5cm;
-  color: rgb(100, 100, 100);
+  color: rgb(194, 246, 255);
 }
 .topcontent header{
   font-size: 0.9cm;
-  color: rgb(204, 204, 204);
+  color: rgb(255, 255, 255);
 }
 .topnews:hover{
   transform: scale(1.05);
@@ -515,14 +527,17 @@ hr{
 
 .ml1 {
 font-weight: 100;
-color: grey;
+color: rgb(194, 246, 255);
 font-size: 4.5em;
 }
 
 .ml1 .letter {
   display: inline-block;
-  line-height: 1em;
+  line-height: 0.8em;
   font-family: 'Montserrat', sans-serif;
+  color: rgb(194, 246, 255);
+  letter-spacing: 5px;
+  word-spacing: 15px;
 }
 
 .ml1 .text-wrapper {

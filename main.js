@@ -38,7 +38,19 @@ function main() {
     temp.appendChild(square);
   }
 
-
+  var tem=0;
+  for(var i=1;i<=currdays;i++){   
+    var newDate = new Date(dt.getFullYear(),dt.getMonth(),i)
+    if(newDate.getDay()==0){   
+        tem++;
+    }
+    if(newDate.getDay()==6){   
+        tem++;
+    }
+  }
+  console.log(tem);
+  let res = currdays - tem;
+  
 var now = new Date();
 var wday = weekdays[ now.getDay() ];
 var mth = months[ now.getMonth() ];
@@ -46,6 +58,9 @@ var mth = months[ now.getMonth() ];
   document.getElementById('d').innerText = day;
   document.getElementById('e2').innerText = wday;
   document.getElementById('e1').innerText = `${mth}, ${year}`;
+  document.getElementById('d1').innerHTML = `${currdays}` ;
+  document.getElementById('d2').innerHTML = `${res}`;
+
 }
 
 function navigate() {
