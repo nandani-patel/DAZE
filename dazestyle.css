@@ -646,7 +646,7 @@ font-size: 4.5em;
   padding: 0;
   cursor: pointer;
 }
-li{
+.conatiners li{
   list-style: none;
   background-color: black;
   background: radial-gradient( #9e7878a1, #353535);
@@ -666,7 +666,7 @@ li{
 #ul3 li{
   background: radial-gradient( #93a77ba1, #353535);
 }
-li button{
+.conatiners li button{
   float: right;
 }
 #ul1 li.checked {
