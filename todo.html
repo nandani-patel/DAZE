@@ -19,7 +19,7 @@
         }
 
         .tasks-left {
-            width: 65%;
+            width: 70%;
             margin: 0;
             padding: 0;
             display: inline-block;
@@ -29,7 +29,7 @@
 
         .stats {
             float: right;
-            width: 35%;
+            width: 30%;
             margin: 0;
             padding: 0;
             display: inline-block;
@@ -42,53 +42,80 @@
             text-align: center;
             color: white;
         }
+        #info{
+            margin: 20px;
+        }
 
         .des {
+            vertical-align: top;
             display: inline-block;
             width: 60%;
+            min-height: 40px;
             height: fit-content;
             background-color: #fff;
+            margin-top: 50px;
         }
 
         .deadline {
+            vertical-align: top;
             display: inline-block;
             width: 20%;
-            height: 30px;
-            overflow-y: scroll;
+            height: 40px;
             background-color: #fff;
-            margin: 20px;
+            margin-top: 50px;
         }
 
         .hours {
+            vertical-align: top;
             align-items: center;
             display: inline-block;
             width: 10%;
-            height: 30px;
-            overflow-y: scroll;
+            height: 40px;
             background-color: #fff;
-            margin: 20px;
+            margin-top: 50px;
+        }
+        .modal{
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 50%; 
+            height: fit-content; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        #add{
+            float: right;
+            background-color: grey;
         }
     </style>
 </head>
 
 <body>
     <div class="tasks-left">
-        <header>TASKS</header>
-        <div class="info">
-            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, perspiciatis dolores
-                ab inventore repellat cum! Dicta ea nulla eum ad nostrum voluptate voluptates dolores saepe?</div>
-            <div class="deadline"></div>
-            <div class="hours"></div>
-        </div>
-        <div class="info">
-            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, perspiciatis dolores
-                ab inventore repellat cum! Dicta ea nulla eum ad nostrum voluptate voluptates dolores saepe?</div>
-            <div class="deadline"></div>
-            <div class="hours"></div>
-        </div>
+        <header>TASKS<button style="float: right;" id="b1" type="button">+</button></header>
+        <div id="info"></div>
     </div>
     
     <div class="stats"> </div>
+    <div id="Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>enter your task</p> <input type="text" id="input1" placeholder="  ">
+            <p>enter deadline</p> <input type="text" id="input2" placeholder=" ">
+            <p>enter number of hours required</p> <input type="text" id="input3" placeholder=" ">
+            <button id="add" type="button">+</button>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="todo.js"></script>
