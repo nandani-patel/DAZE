@@ -11,15 +11,26 @@ var des = document.getElementById("des");
 let add = document.getElementById("add");
 (function(){
     add.addEventListener('click',function(e){
-        e.preventDefault();
-            info.innerHTML += '<div class="des">' + input1.value + '</div>'
+      e.preventDefault();
+        if(input1.value === ''){
+          alert("cant append empty item to the list");
+        }
+        else if(input2.value === ''){
+          alert("cant append empty item to the list");
+        }  
+        else if(input3.value === ''){
+          alert("cant append empty item to the list");
+        }    
+        else{
+          info.innerHTML += '<div class="des">' + input1.value + '</div>'
             info.innerHTML += '<div class="deadline">' + input2.value + '</div>'
             info.innerHTML += '<div class="hours">' + input3.value + '</div>'
             store();
             input1.value = " ";
             input2.value = " ";
             input3.value = " ";
-            modal.style.display = "none";
+            modal.style.display = "none";   
+        }  
     },false)
     info.addEventListener('click',function(e){
       var t1 = e.target;
