@@ -51,7 +51,6 @@ let b3 = document.getElementById("b3");
 
 
 
-
   (function(){
     b2.addEventListener('click',function(f){
         f.preventDefault();
