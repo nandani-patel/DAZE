@@ -13,95 +13,11 @@
             margin: 0;
             padding: 0;
         }
-
         * {
             box-sizing: border-box;
         }
-
-        .tasks-left {
-            width: 70%;
-            margin: 0;
-            padding: 0;
-            display: inline-block;
-            background-color: black;
-            height: 800px;
-        }
-
-        .stats {
-            float:right;
-            width: 30%;
-            margin: 0;
-            padding: 0;
-            /* display: inline-block; */
-            background-color: blue;
-            height: 800px;
-        }
-
-        header {
-            font-size: 1.5cm;
-            text-align: center;
-            color: white;
-        }
-        #info{
-            margin: 20px;
-        }
-
-        .des {
-            vertical-align: top;
-            display: inline-block;
-            width: 60%;
-            min-height: 40px;
-            height: fit-content;
-            background-color: #fff;
-            margin-top: 50px;
-            margin-right: 30px;
-        }
-
-        .deadline {
-            vertical-align: top;
-            display: inline-block;
-            width: 20%;
-            height: 40px;
-            background-color: #fff;
-            margin-top: 50px;
-            margin-right: 30px;
-        }
-
-        .hours {
-            vertical-align: top;
-            align-items: center;
-            display: inline-block;
-            width: 10%;
-            height: 40px;
-            background-color: #fff;
-            margin-top: 50px;
-        }
-        .modal{
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 100px;
-            left: 0;
-            top: 0;
-            width: 50%; 
-            height: fit-content; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4);
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-        #add{
-            float: right;
-            background-color: grey;
-        }
     </style>
 </head>
-
 <body>
     <div class="tasks-left">
         <header>TASKS<button style="float: right;" id="b1" type="button">+</button></header>
@@ -125,32 +41,4 @@
         AOS.init();
     </script>
 </body>
-
 </html>
-
-
-
-<!-- <div class="TODO">
-    <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
-        <header>TO-DO<button id="b1" type="button">+</button></header>
-        <input type="text" id="input1" placeholder="ENTER ITEM TO ADD TO YOUR TO-DO LIST......">
-        <div>
-            <ul id="ul1"> </ul>
-        </div>
-    </div>
-    
-    <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
-        <header>IN PROGRESS<button id="b2" type="button">+</button></header>
-        <input type="text" id="input2" placeholder="ENTER ITEM TO ADD TO IN-PROGRESS LIST......">
-        <div>
-            <ul id="ul2"></ul>
-        </div>
-    </div>
-    <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
-        <header>COMPLETED<button id="b3" type="button">+</button></header>
-        <input type="text" id="input3" placeholder="ENTER ITEM TO ADD TO COMPLETED LIST......">
-        <div>
-            <ul id="ul3"></ul>
-        </div>
-    </div>
-</div>  -->
