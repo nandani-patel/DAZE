@@ -3,12 +3,17 @@ let b1 = document.getElementById("b1");
 b1.onclick = function() {
   modal.style.display = "block";
 }
+let close = document.getElementById("close");
+close.addEventListener('click',function(closemodal){
+  modal.style.display = "none";
+})
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 let input3 = document.getElementById("input3");
 var info = document.getElementById("info");
 var des = document.getElementById("des");
 let add = document.getElementById("add");
+
 (function(){
     add.addEventListener('click',function(e){
       e.preventDefault();
