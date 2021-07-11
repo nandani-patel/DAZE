@@ -27,7 +27,7 @@ let add = document.getElementById("add");
           alert("cant append empty item to the list");
         }    
         else{
-          info.innerHTML += '<div class="des">' + input1.value + '</div>'
+            info.innerHTML += '<div class="des">' + input1.value + '</div>'
             info.innerHTML += '<div class="deadline">' + input2.value + '</div>'
             info.innerHTML += '<div class="hours">' + input3.value + '</div>'
             store();
@@ -55,6 +55,68 @@ let add = document.getElementById("add");
 
 
 
+//   (function(){
+//     b2.addEventListener('click',function(f){
+//         f.preventDefault();
+//         if(input2.value === ''){
+//             alert("cant append empty item to the list");
+//         }
+//         else{
+//             ul2.innerHTML += '<li>' + input2.value + '<button id="del">X</button></li>';
+//             store();
+//         }
+//         input2.value = "";
+//         },false)
+//     ul2.addEventListener('click',function(f){
+//       var t2 = f.target;
+//       if(t2.className == "checked"){
+//         // t2.parentNode.removeChild(t2);
+//         t2.className = ""; 
+//       } 
+//       else  t2.className = "checked";
+//       store();
+//     },false)
+//     function store() {
+//       localStorage.setItem("testKey2", JSON.stringify(ul2.innerHTML));
+//     }
+//     function getValues() {
+//     //   var storedValues = window.localStorage.myitems;
+//       var storedValues2 = JSON.parse(localStorage.getItem("testKey2"));
+//       ul2.innerHTML = storedValues2; 
+//     }
+//     getValues();
+//   })();
+//   (function(){
+//     b2.addEventListener('click',function(f){
+//         f.preventDefault();
+//         if(input2.value === ''){
+//             alert("cant append empty item to the list");
+//         }
+//         else{
+//             ul2.innerHTML += '<li>' + input2.value + '<button id="del">X</button></li>';
+//             store();
+//         }
+//         input2.value = "";
+//         },false)
+//     ul2.addEventListener('click',function(f){
+//       var t2 = f.target;
+//       if(t2.className == "checked"){
+//         // t2.parentNode.removeChild(t2);
+//         t2.className = ""; 
+//       } 
+//       else  t2.className = "checked";
+//       store();
+//     },false)
+//     function store() {
+//       localStorage.setItem("testKey2", JSON.stringify(ul2.innerHTML));
+//     }
+//     function getValues() {
+//     //   var storedValues = window.localStorage.myitems;
+//       var storedValues2 = JSON.parse(localStorage.getItem("testKey2"));
+//       ul2.innerHTML = storedValues2; 
+//     }
+//     getValues();
+//   })();
 //   (function(){
 //     b2.addEventListener('click',function(f){
 //         f.preventDefault();
