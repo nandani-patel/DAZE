@@ -584,17 +584,13 @@ font-size: 4.5em;
   font-size: 0.7cm;
   color: azure;
 }
-.containers #b1, #b2, #b3{
-  float: right;
+ #b1, #b2, #b3{
   background-color: rgba(32, 32, 32, 0.534);
   color: white;
   text-align: center;
   font-size: 1cm;
   height: 2cm;
   width: 2cm;
-  top: 4.75%;
-  position: absolute;
-  left: 75%;
   border-radius: 50%;
 }
 .containers button:hover {
