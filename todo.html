@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,119 @@
     <link rel="stylesheet" href="dazestyle.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
-        *{
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
             box-sizing: border-box;
+        }
+
+        .tasks-left {
+            width: 65%;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            background-color: black;
+            height: 800px;
+        }
+
+        .stats {
+            float: right;
+            width: 35%;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            background-color: blue;
+            height: 800px;
+        }
+
+        header {
+            font-size: 1.5cm;
+            text-align: center;
+            color: white;
+        }
+
+        .des {
+            display: inline-block;
+            width: 60%;
+            height: fit-content;
+            background-color: #fff;
+        }
+
+        .deadline {
+            display: inline-block;
+            width: 20%;
+            height: 30px;
+            overflow-y: scroll;
+            background-color: #fff;
+            margin: 20px;
+        }
+
+        .hours {
+            align-items: center;
+            display: inline-block;
+            width: 10%;
+            height: 30px;
+            overflow-y: scroll;
+            background-color: #fff;
+            margin: 20px;
         }
     </style>
 </head>
+
 <body>
-    <div class="TODO">
-        <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
-            <header>TO-DO<button id="b1" type="button">+</button></header>
-            <input type="text" id="input1" placeholder="ENTER ITEM TO ADD TO YOUR TO-DO LIST......">
-            <div>
-                <ul id="ul1"> </ul>
-            </div>
+    <div class="tasks-left">
+        <header>TASKS</header>
+        <div class="info">
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, perspiciatis dolores
+                ab inventore repellat cum! Dicta ea nulla eum ad nostrum voluptate voluptates dolores saepe?</div>
+            <div class="deadline"></div>
+            <div class="hours"></div>
         </div>
-        
-        <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
-            <header>IN PROGRESS<button id="b2" type="button">+</button></header>
-            <input type="text" id="input2" placeholder="ENTER ITEM TO ADD TO IN-PROGRESS LIST......">
-            <div>
-                <ul id="ul2"></ul>
-            </div>
+        <div class="info">
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, perspiciatis dolores
+                ab inventore repellat cum! Dicta ea nulla eum ad nostrum voluptate voluptates dolores saepe?</div>
+            <div class="deadline"></div>
+            <div class="hours"></div>
         </div>
-        <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
-            <header>COMPLETED<button id="b3" type="button">+</button></header>
-            <input type="text" id="input3" placeholder="ENTER ITEM TO ADD TO COMPLETED LIST......">
-            <div>
-                <ul id="ul3"></ul>
-            </div>
-        </div>
-    </div> 
+    </div>
+    
+    <div class="stats"> </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="todo.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>
+
+
+
+<!-- <div class="TODO">
+    <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
+        <header>TO-DO<button id="b1" type="button">+</button></header>
+        <input type="text" id="input1" placeholder="ENTER ITEM TO ADD TO YOUR TO-DO LIST......">
+        <div>
+            <ul id="ul1"> </ul>
+        </div>
+    </div>
+    
+    <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
+        <header>IN PROGRESS<button id="b2" type="button">+</button></header>
+        <input type="text" id="input2" placeholder="ENTER ITEM TO ADD TO IN-PROGRESS LIST......">
+        <div>
+            <ul id="ul2"></ul>
+        </div>
+    </div>
+    <div class="containers" data-aos="zoom-out" data-aos-duration="2000">
+        <header>COMPLETED<button id="b3" type="button">+</button></header>
+        <input type="text" id="input3" placeholder="ENTER ITEM TO ADD TO COMPLETED LIST......">
+        <div>
+            <ul id="ul3"></ul>
+        </div>
+    </div>
+</div>  -->
