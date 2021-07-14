@@ -1,29 +1,37 @@
 var modal = document.getElementById("Modal");
 let b1 = document.getElementById("b1"); 
+
 b1.onclick = function() {
   modal.style.display = "block";
 }
+
 
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 let input3 = document.getElementById("input3");
 var info = document.getElementById("info");
+let header = document.getElementById("tasks-left");
 // var des = document.getElementById("des");
 let add = document.getElementById("add");
 
+
 (function(){
+
     add.addEventListener('click',function(e){
       e.preventDefault();
         if(input1.value === ''){
           alert("cant append empty item to the list");
+          modal.style.display = "none";
         }
         else if(input2.value === ''){
           alert("cant append empty item to the list");
+          modal.style.display = "none";
         }  
         else if(input3.value === ''){
           alert("cant append empty item to the list");
+          modal.style.display = "none";
         }    
-        else{
+        else{ 
             info.innerHTML += `<div class="task-card">
             <div class="title">
             ${input1.value}
@@ -45,24 +53,30 @@ let add = document.getElementById("add");
             input1.value = " ";
             input2.value = " ";
             input3.value = " ";
-            modal.style.display = "none";   
+            modal.style.display = "none";
         }  
     },false)
+
   $(document).on('click', ':button', function() {
       $(this).parent().remove();
       store();
   });
+
     function store() {
       localStorage.setItem("testKey1", JSON.stringify(info.innerHTML));
     } 
+
     function getValues() {
       var storedValues1 = JSON.parse(localStorage.getItem("testKey1"));
       info.innerHTML += storedValues1; 
     }
+
     getValues();
+
 })();
 
 let close = document.getElementById("close");
+
 close.addEventListener('click',function(closemodal){
   modal.style.display = "none";
-})
+});
