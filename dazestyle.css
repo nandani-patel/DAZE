@@ -564,7 +564,7 @@ border: white solid 2px;
   height: 50px;
 }
 ::placeholder{
-  color: rgba(202, 202, 202, 0.555);
+  color: rgba(0, 0, 0, 0.438);
 }
 .tasks-left {
   width: 70%;
@@ -625,29 +625,31 @@ header {
   font-size: 1cm;
   color: black;
   padding: 0 10px 0 10px;
+  margin: auto;
+  margin-top: 15px;
 }
 .modal{
   display: none; 
   position: fixed; 
   z-index: 1; 
   padding-top: 100px;
-  left: 0;
-  top: 0;
+  left: 20%;
+  top: 12.5%;
   width: 50%; 
-  height: fit-content; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
 }
 .modal-content {
-  background-color: #fefefe;
+  background-color: white;
+  background-image: linear-gradient(to top right, rgb(179, 179, 179),rgb(75, 75, 75));
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  height: 400px;
 }
 #add{
   float: right;
   background-color: grey;
+  size: 1cm;
 }
 .task-card{
   height: 270px;
@@ -665,4 +667,41 @@ textarea {
 }
 .checked{
   text-decoration: white;
+}
+.close{
+  float: right;
+}
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.modal button {
+  margin: 20px;
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: white;
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 300ms ease-in-out;
+}
+
+.modal button:hover {
+	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+.modal button:focus {
+	outline: none;
 }
